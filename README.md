@@ -5,7 +5,7 @@ A Flask-based web application for object detection using the YOLOv3 model, pre-t
 Table of Contents
 
 Features
-Demo
+
 Prerequisites
 Installation
 Usage
@@ -23,8 +23,7 @@ Displays bounding boxes with class labels and confidence scores.
 Supports images up to 16MB.
 Saves processed images in an output directory.
 
-Demo
-[Insert demo image or video link here, e.g., a screenshot of the app or a processed image with bounding boxes]Example: 
+
 Prerequisites
 
 Python 3.7 or higher
@@ -50,8 +49,7 @@ Install dependencies:
 pip install -r requirements.txt
 
 
-Download YOLOv3 weights:Download yolov3.weights from the official YOLO website and place it in the project directory. Note: This file is ~237MB and should not be included in the GitHub repository due to file size limits.
-
+Download YOLOv3 weights:Download yolov3.weights from the official YOLO website and place it in the project directory. 
 Verify directory structure:
 your-repo/
 ├── app.py
@@ -62,8 +60,8 @@ your-repo/
 ├── templates/
 │   ├── index.html
 │   ├── result.html
-├── uploads/  # Created automatically
-├── output/   # Created automatically
+├── uploads/  
+├── output/   
 
 
 
@@ -116,17 +114,10 @@ TensorFlow issues: Check TensorFlow compatibility with your Python version.
 Image not processed: Verify image size (<16MB) and format.
 Font errors: The app uses default font if arial.ttf is missing.
 
-Contributing
-Contributions are welcome! To contribute:
 
-Fork the repository.
-Create a feature branch (git checkout -b feature-name).
-Commit changes (git commit -m "Add feature").
-Push to the branch (git push origin feature-name).
-Open a pull request.
 
-Please follow the coding style and test changes before submitting.
+
 License
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the MIT License.
 
 
