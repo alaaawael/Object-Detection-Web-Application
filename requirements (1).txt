@@ -1,0 +1,7 @@
+flask==2.0.1
+tensorflow==2.8.0
+numpy==1.21.6
+pillow==9.0.1
+opencv-python==4.5.5.64
+seaborn==0.11.2
+werkzeug==2.0.3
