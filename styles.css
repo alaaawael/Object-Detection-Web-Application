@@ -1,0 +1,218 @@
+/* Base Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+/* Upload Section */
+.upload-section {
+    text-align: center;
+    margin: 40px 0;
+    padding: 30px;
+    border: 2px dashed #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+.upload-section:hover {
+    border-color: #3498db;
+    background-color: #f0f7fd;
+}
+
+/* File Input Styling */
+.file-input-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.custom-file-input {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    max-width: 400px;
+}
+
+.custom-file-input input[type="file"] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.file-input-label {
+    display: block;
+    padding: 15px 25px;
+    background: #3498db;
+    color: white;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.file-input-label:hover {
+    background: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.file-input-label:active {
+    transform: translateY(0);
+}
+
+.file-name {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Submit Button */
+.submit-btn {
+    padding: 15px 30px;
+    background: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.submit-btn:hover {
+    background: #27ae60;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.submit-btn:disabled {
+    background: #95a5a6;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+/* Results Section */
+.result-container {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.result-image {
+    max-width: 100%;
+    max-height: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid #eee;
+}
+
+.actions {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.action-btn {
+    padding: 12px 25px;
+    background: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+.action-btn:hover {
+    background: #2980b9;
+    text-decoration: none;
+}
+
+/* Class List */
+.classes-section {
+    margin-top: 40px;
+}
+
+.class-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.class-item {
+    background: #e8f4fc;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 13px;
+    color: #2c3e50;
+    border: 1px solid #d6e9f7;
+}
+
+/* Flash Messages */
+.flashes {
+    margin: 20px 0;
+}
+
+.flash {
+    padding: 15px;
+    background: #fff3cd;
+    color: #856404;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    border-left: 5px solid #ffeeba;
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        margin: 20px;
+    }
+    
+    .file-input-label, .submit-btn {
+        padding: 12px 20px;
+    }
+    
+    .actions {
+        flex-direction: column;
+        align-items: center;
+    }
+}
