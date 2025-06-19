@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detection Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Detection Results</h1>
+        
+        <div class="result-container">
+            <img src="{{ url_for('output_image', filename=filename) }}" 
+                 alt="Detection Result" class="result-image">
+            
+            <div class="actions">
+                <a href="/" class="action-btn">
+                    <i class="fas fa-redo"></i> Try Another Image
+                </a>
+                <a href="{{ url_for('output_image', filename=filename) }}" 
+                   download class="action-btn">
+                    <i class="fas fa-download"></i> Download Result
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
