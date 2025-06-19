@@ -37,7 +37,7 @@ Installation
 
 Clone the repository:
 git clone https://github.com/alaaawael/your-repo.git
-cd your-repo
+
 
 
 Set up a virtual environment):
